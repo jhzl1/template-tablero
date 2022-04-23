@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Plantilla reuniones Provenza</title>
+
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script src="html2pdf.bundle.min.js"></script>
+    <!--Nuestro script, que se encarga de crear el PDF usando la librería-->
+    <script src="script.js"></script>
+  </head>
+  <body class="text-xl">
+    <button id="btnCrearPdf">Generar PDF</button>
+    <h3 id="mes" class="text-3xl">Marzo</h3>
+    <!-- Cabecera de la pagina -->
+    <div id="document">
+      <div class="bg-teal-600 px-14 py-5 flex flex-row text-white">
+        <h1 id="week" class="text-white text-xl uppercase tracking-widest">
+          21 al 27 de marzo
+        </h1>
+        <span class="ml-2"> | </span>
+        <h1 class="text-white font-bold text-xl uppercase tracking-widest ml-2">
+          1 SAMUEL 16, 17
+        </h1>
+      </div>
+
+      <div
+        class="bg-teal-100 px-12 py-2 text-white flex flex-row justify-between items-center"
+      >
+        <div class="flex flex-row">
+          <!-- <h3 class="font-bold text-black ml-2">Presidente: Luis Miranda</h3> -->
+          <!-- <h3 class="font-bold text-black ml-2">Presidente: Andrés Delgado</h3> -->
+          <!-- <h3 class="font-bold text-black ml-2">Presidente: Jorge Salinas</h3> -->
+          <h3 class="font-bold text-black ml-2">Presidente: David Sánchez</h3>
+          <!-- <h3 class="font-bold text-black ml-2">Presidente: Orlando Sánchez</h3> -->
+          <!-- <h3 class="font-bold text-black ml-2">
+            Presidente: Robinson Espinosa
+          </h3> -->
+        </div>
+
+        <!-- <div class="bg-red-200 px-5">
+          <span class="uppercase font-bold text-red-700"
+            >semana de la visita</span
+          >
+        </div> -->
+      </div>
+
+      <!-- fin de la cabecera -->
+
+      <!-- Inicio Tesoros de la Biblia -->
+      <div class="mt-5 px-14">
+        <!-- inicio zoom y acomodadores -->
+        <div class="my-5 bg-gray-200 px-5 py-2 flex flex-row justify-between">
+          <div class="flex flex-row">
+            <div class="bg-blue-500 p-1 rounded-lg flex items-center">
+              <i class="fas fa-video text-sm text-white"></i>
+            </div>
+
+            <h3 class="font-bold text-black ml-2">
+              Encargado Zoom: Jahaziel Campos
+            </h3>
+          </div>
+          <div class="flex flex-row">
+            <div class="bg-purple-700 p-1 rounded-lg flex items-center">
+              <i class="fas fa-user-tie text-white"></i>
+            </div>
+            <h3 class="font-bold text-black ml-2">
+              Acomodadores: Josue Solano y Jhon Palomino
+            </h3>
+          </div>
+        </div>
+        <!-- fin zoom y acomodadores -->
+        <div class="border-b border-gray-700 pb-5">
+          <div class="flex flex-row items-center">
+            <img src="/img/gem.png" />
+            <h3 class="uppercase ml-2 text-4xl font-bold text-gray-600">
+              Tesoros de la biblia
+            </h3>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-2 gap-5 my-2">
+          <span>
+            “La batalla es de Jehová” (10 mins.)
+            <i class="fas fa-chevron-right mx-5"></i>
+          </span>
+          <span class="font-bold">Ricardo Álvarez</span>
+          <span>
+            Busquemos perlas escondidas (10 mins.)
+            <i class="fas fa-chevron-right mx-5"></i>
+          </span>
+          <span class="font-bold">Luis Florez</span>
+          <span>
+            Lectura de la Biblia (4 mins.)
+            <i class="fas fa-chevron-right mx-5"></i>
+          </span>
+          <span class="font-bold">Jean Carlos Portillo</span>
+        </div>
+
+        <div class="mt-5">
+          <div class="border-b border-yellow-700 pb-5">
+            <div class="flex flex-row items-center">
+              <img src="/img/teachers.png" />
+              <h3 class="uppercase ml-2 text-4xl font-bold text-yellow-600">
+                Seamos mejores maestros
+              </h3>
+            </div>
+          </div>
+        </div>
+        <div class="grid grid-cols-2 gap-5 my-2">
+          <span>
+            Invitación a la Conmemoración (2 mins.)
+            <i class="fas fa-chevron-right mx-5"></i>
+          </span>
+          <span class="font-bold">Gabriela Rangel y Graciela de Salinas</span>
+          <span>
+            Invitación a la Conmemoración (3 mins.)
+            <i class="fas fa-chevron-right mx-5"></i>
+          </span>
+          <span class="font-bold">Leonor Infante y Gladys Pote</span>
+          <span>
+            Revisita (3 mins.) <i class="fas fa-chevron-right mx-5"></i>
+          </span>
+          <span class="font-bold">Jenny de Mora y Laura Mijares</span>
+          <span>
+            Revisita (3 mins.) <i class="fas fa-chevron-right mx-5"></i>
+          </span>
+          <span class="font-bold">Ingrid Ortega y Yuselis Quiroz</span>
+        </div>
+
+        <div class="border-b border-red-800 pb-5 pt-5 mb-4">
+          <div class="flex flex-row items-center">
+            <img src="/img/sheep.png" />
+            <h3 class="uppercase ml-2 text-4xl font-bold text-red-800">
+              Nuestra vida cristiana
+            </h3>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-2 gap-5 my-2">
+          <span>
+            “Tres formas de demostrar que confiamos en Jehová” (15 mins.)
+            <i class="fas fa-chevron-right mx-5"></i>
+          </span>
+          <span class="font-bold">Orlando Sánchez</span>
+
+          <span>
+            Estudio bíblico de la congregación (30 mins.)
+            <i class="fas fa-chevron-right mx-5"></i>
+          </span>
+          <div>
+            <span class="font-bold">Andrés Delgado - Lector: Josué Solano</span>
+          </div>
+
+          <span>
+            Oración
+            <i class="fas fa-chevron-right mx-5"></i>
+          </span>
+          <span class="font-bold">Juan Carlos Poveda</span>
+        </div>
+      </div>
+      <div class="bg-green-600 px-14 py-5 mt-20 flex flex-row text-white">
+        <h1 class="text-white font-bold text-xl uppercase tracking-widest ml-2">
+          Reunión fin de semana
+        </h1>
+      </div>
+
+      <div
+        class="mb-2 bg-green-100 px-12 py-2 text-white flex flex-row justify-between items-center"
+      >
+        <div class="flex flex-row">
+          <h3 class="font-bold text-black ml-2">Presidente: Joselin Poveda</h3>
+        </div>
+
+        <!-- <div class="bg-red-200 px-5">
+    <span class="uppercase font-bold text-red-700"
+      >semana de la visita</span
+    >
+  </div> -->
+      </div>
+
+      <span class="ml-14 font-bold">Canción </span>
+
+      <div class="mt-5 px-14">
+        <div class="border-b border-purple-800 pb-5 mb-4">
+          <div class="flex flex-row items-center">
+            <i class="fab fa-black-tie text-7xl text-purple-800"></i>
+            <h3 class="uppercase ml-2 text-4xl font-bold text-purple-800">
+              Discurso Público
+            </h3>
+          </div>
+        </div>
+        <div class="grid grid-cols-2 gap-5 my-2">
+          <span>
+            Cómo sentirse seguro en este mundo turbulento (30 mins.)
+            <i class="fas fa-chevron-right mx-5"></i>
+          </span>
+          <span class="font-bold">Eliézer Sánchez (Cong. El Rocío)</span>
+        </div>
+
+        <div class="border-b border-blue-800 pb-5 my-5">
+          <div class="flex flex-row items-center">
+            <div class="bg-blue-800 p-3">
+              <i class="fas fa-book-open text-4xl text-white"></i>
+            </div>
+            <h3 class="uppercase ml-2 text-4xl font-bold text-blue-800">
+              Estudio de La Atalaya
+            </h3>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-2 gap-5 my-2">
+          <span>
+            Qué nos enseñan las lágrimas de Jesús
+            <i class="fas fa-chevron-right mx-5"></i>
+          </span>
+
+          <span class="font-bold"
+            >Orlando Sánchez - Lector: Jameson Hortua</span
+          >
+        </div>
+      </div>
+    </div>
+
+    <!-- Inicio Reuniones fin de semana -->
+  </body>
+</html>

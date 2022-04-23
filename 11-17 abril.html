@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Plantilla reuniones Provenza</title>
+
+    <script src="https://kit.fontawesome.com/e8c5bf2115.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script src="html2pdf.bundle.min.js"></script>
+    <!--Nuestro script, que se encarga de crear el PDF usando la librería-->
+    <script src="script.js"></script>
+  </head>
+  <body class="text-xl">
+    <button id="btnCrearPdf">Generar PDF</button>
+    <h3 id="mes" class="text-3xl">Abril</h3>
+    <!-- Cabecera de la pagina -->
+    <div id="document">
+      <div class="bg-purple-600 px-14 py-5 flex flex-row text-white">
+        <h1 id="week" class="text-white text-xl uppercase tracking-widest">11 al 17 de abril</h1>
+        <span class="ml-2"> | </span>
+        <h1 class="text-white font-bold text-xl uppercase tracking-widest ml-2">Semana de la conmemoración</h1>
+      </div>
+
+      <!-- <div
+        class="bg-purple-100 px-12 py-2 text-white flex flex-row justify-between items-center"
+      > -->
+      <!-- <div class="flex flex-row"> -->
+      <!-- <h3 class="font-bold text-black ml-2">Presidente: Luis Miranda</h3> -->
+      <!-- <h3 class="font-bold text-black ml-2">Presidente: Andrés Delgado</h3> -->
+      <!-- <h3 class="font-bold text-black ml-2">Presidente: Jorge Salinas</h3> -->
+      <!-- <h3 class="font-bold text-black ml-2">Presidente: David Sánchez</h3> -->
+      <!-- <h3 class="font-bold text-black ml-2">Presidente: Orlando Sánchez</h3> -->
+      <!-- <h3 class="font-bold text-black ml-2">
+            Presidente: Robinson Espinosa
+          </h3> -->
+      <!-- </div> -->
+
+      <!-- <div class="bg-red-200 px-5">
+          <span class="uppercase font-bold text-red-700"
+            >semana de la visita</span
+          >
+        </div> -->
+      <!-- </div> -->
+
+      <!-- fin de la cabecera -->
+
+      <!-- Inicio Tesoros de la Biblia -->
+      <div class="px-14">
+        <!-- inicio zoom y acomodadores -->
+        <div class="my-3 grid grid-cols-2 gap-2">
+          <div class="p-1 rounded-lg flex items-center">
+            <i class="fa-solid fa-microphone text-neutral-600"></i>
+            <h3 class="font-bold text-black ml-2">Micrófonos:</h3>
+          </div>
+
+          <h3 class="font-bold text-black">Joel Velazquez y Samuel Delgado</h3>
+          <div class="p-1 rounded-lg flex items-center">
+            <i class="fas fa-user-tie text-blue-800"></i>
+            <h3 class="font-bold text-black ml-2">Acomodadores:</h3>
+          </div>
+
+          <h3 class="font-bold text-black">Christian Avella y Joselin Poveda</h3>
+          <div class="p-1 rounded-lg flex items-center">
+            <i class="fa-solid fa-shield-halved text-yellow-500"></i>
+            <h3 class="font-bold text-black ml-2">Seguridad:</h3>
+          </div>
+
+          <h3 class="font-bold text-black">Humberto Rangel</h3>
+          <div class="p-1 rounded-lg flex items-center">
+            <i class="fa-solid fa-broom text-teal-500"></i>
+            <h3 class="font-bold text-black ml-2">Limpieza:</h3>
+          </div>
+
+          <h3 class="font-bold text-black">Grupo 2 (Robinson Espinosa)</h3>
+        </div>
+        <!-- fin zoom y acomodadores -->
+      </div>
+      <div class="bg-pink-600 px-14 py-5 mt-6 flex flex-row text-white">
+        <h1 class="text-white font-bold text-xl uppercase tracking-widest">Reunión fin de semana</h1>
+      </div>
+
+      <div class="mb-2 bg-pink-100 px-12 py-2 text-white flex flex-row justify-between items-center">
+        <div class="flex flex-row">
+          <h3 class="font-bold text-black ml-2">Presidente: Jhon Palomino</h3>
+        </div>
+
+        <!-- <div class="bg-red-200 px-5">
+    <span class="uppercase font-bold text-red-700"
+      >semana de la visita</span
+    >
+  </div> -->
+      </div>
+
+      <div class="mt-5 px-14">
+        <div class="border-b border-purple-800 pb-5 mb-4">
+          <div class="flex flex-row items-center">
+            <i class="fab fa-black-tie text-7xl text-purple-800"></i>
+            <h3 class="uppercase ml-2 text-4xl font-bold text-purple-800">Discurso Público</h3>
+          </div>
+        </div>
+        <div class="grid grid-cols-2 gap-5 my-2">
+          <span> Permanezcamos sin culpa en medio de una generación torcida (30 mins.) </span>
+          <span class="font-bold">Victor Avendaño (Cong. Caldas)</span>
+        </div>
+
+        <div class="border-b border-blue-800 pb-5 my-5">
+          <div class="flex flex-row items-center">
+            <div class="bg-blue-800 p-3">
+              <i class="fas fa-book-open text-4xl text-white"></i>
+            </div>
+            <h3 class="uppercase ml-2 text-4xl font-bold text-blue-800">Estudio de La Atalaya</h3>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-2 gap-5 my-2">
+          <span> “Escucha las palabras de los sabios” </span>
+
+          <span class="font-bold">Orlando Sánchez - Lector: Jean Paul Portillo</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Inicio Reuniones fin de semana -->
+  </body>
+</html>

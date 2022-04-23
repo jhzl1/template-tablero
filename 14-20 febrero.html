@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Plantilla reuniones Provenza</title>
+
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script src="html2pdf.bundle.min.js"></script>
+    <!--Nuestro script, que se encarga de crear el PDF usando la librería-->
+    <script src="script.js"></script>
+  </head>
+  <body class="text-xl">
+    <button id="btnCrearPdf">Generar PDF</button>
+    <h3 id="mes" class="text-3xl">Febrero</h3>
+    <!-- Cabecera de la pagina -->
+    <div id="document">
+      <div class="bg-teal-600 px-14 py-5 flex flex-row text-white">
+        <h1 id="week" class="text-white text-xl uppercase tracking-widest">
+          14-20 de febrero
+        </h1>
+        <span class="ml-2"> | </span>
+        <h1 class="text-white font-bold text-xl uppercase tracking-widest ml-2">
+          1 SAMUEL 3-5
+        </h1>
+      </div>
+
+      <div
+        class="bg-teal-100 px-12 py-2 text-white flex flex-row justify-between items-center"
+      >
+        <div class="flex flex-row">
+          <!-- <h3 class="font-bold text-black ml-2">Presidente: Luis Miranda</h3> -->
+          <!-- <h3 class="font-bold text-black ml-2">Presidente: Andrés Delgado</h3> -->
+          <!-- <h3 class="font-bold text-black ml-2">Presidente: Jorge Salinas</h3> -->
+          <h3 class="font-bold text-black ml-2">Presidente: David Sánchez</h3>
+          <!-- <h3 class="font-bold text-black ml-2">Presidente: Orlando Sánchez</h3> -->
+          <!-- <h3 class="font-bold text-black ml-2">
+            Presidente: Robinson Espinosa
+          </h3> -->
+        </div>
+
+        <!-- <div class="bg-red-200 px-5">
+          <span class="uppercase font-bold text-red-700"
+            >semana de la visita</span
+          >
+        </div> -->
+      </div>
+
+      <!-- fin de la cabecera -->
+
+      <!-- Inicio Tesoros de la Biblia -->
+      <div class="mt-2 px-14">
+        <!-- inicio zoom y acomodadores -->
+        <div class="mb-2 bg-gray-200 px-5 py-2 flex flex-row justify-between">
+          <div class="flex flex-row">
+            <div class="bg-blue-500 p-1 rounded-lg flex items-center">
+              <i class="fas fa-video text-sm text-white"></i>
+            </div>
+            <h3 class="font-bold text-black ml-2">
+              Encargado Zoom: Jahaziel Campos
+            </h3>
+            <!-- <h3 class="font-bold text-black ml-2">
+              Encargado Zoom: Carlos Solano
+            </h3> -->
+            <!-- <h3 class="font-bold text-black ml-2">
+              Encargado Zoom: Jhon Palomino
+            </h3> -->
+          </div>
+          <div class="flex flex-row">
+            <div class="bg-purple-700 p-1 rounded-lg flex items-center">
+              <i class="fas fa-user-tie text-white"></i>
+            </div>
+            <h3 class="font-bold text-black ml-2">
+              Acomodadores: Carlos Solano y Samuel Delgado
+            </h3>
+          </div>
+        </div>
+        <!-- fin zoom y acomodadores -->
+        <div class="border-b border-gray-700 pb-5">
+          <div class="flex flex-row items-center">
+            <img src="/img/gem.png" />
+            <h3 class="uppercase ml-2 text-4xl font-bold text-gray-600">
+              Tesoros de la biblia
+            </h3>
+          </div>
+        </div>
+
+        <!-- Inicio item discurso -->
+        <div class="mt-2">
+          <div class="flex flex-row items-center justify-between">
+            <div class="flex flex-row items-center">
+              <h3 class="text-xl">“Jehová es considerado con los demás”</h3>
+              <span class="ml-2">(10 min)</span>
+              <i class="fas fa-chevron-right mx-5"></i>
+            </div>
+
+            <div class="rounded-lg px-5 w-5/12">
+              <span class="text-xl font-bold">Humberto Rangel</span>
+              <!-- <span class="text-orange-800 font-bold">Rafael Pinilla</span> -->
+              <!-- <span class="text-orange-800 font-bold">Alberto Solano</span> -->
+              <!-- <span class="font-bold text-black">Presidente: Luis Miranda</span> -->
+              <!-- <span class="text-orange-800 font-bold">Andrés Delgado</span> -->
+              <!-- <span class="font-bold text-black">Jorge Salinas</span> -->
+              <!-- <span class="font-bold text-black">David Sánchez</span> -->
+              <!-- <span class="font-bold text-orange-800">Orlando Sánchez</span> -->
+              <!-- <span class="font-bold text-black">
+            Robinson Espinosa
+          </span> -->
+            </div>
+          </div>
+        </div>
+
+        <!-- fin item discurso -->
+        <!-- Inicio item discurso -->
+        <div class="mt-2">
+          <div class="flex flex-row items-center justify-between">
+            <div class="flex flex-row items-center">
+              <h3 class="text-xl">Busquemos perlas escondidas</h3>
+              <span class="ml-2">(10 min)</span>
+              <i class="fas fa-chevron-right mx-5"></i>
+            </div>
+
+            <div class="rounded-lg px-5 w-5/12">
+              <!-- <span class="text-orange-800 font-bold"
+                >Robinson Espinosa
+              </span> -->
+              <!-- <span class="text-orange-800 font-bold"
+                >Luis Carlos Urrutia
+              </span> -->
+              <!-- <span class="text-orange-800 font-bold">Rafael Pinilla</span> -->
+              <!-- <span class="text-orange-800 font-bold">Luis Carlos Urrutia</span> -->
+              <span class="text-xl font-bold">Robinson Espinosa</span>
+              <!-- <span class="text-orange-800 font-bold">Alberto Solano</span> -->
+              <!-- <span class="text-orange-800 font-bold">Ricardo Álvarez</span> -->
+              <!-- <span class="text-orange-800 font-bold">Euclides Niño</span> -->
+            </div>
+          </div>
+          <!-- fin item discurso -->
+          <!-- Inicio item discurso -->
+          <div class="mt-2">
+            <div class="flex flex-row items-center justify-between">
+              <div class="flex flex-row items-center">
+                <h3 class="text-xl">Lectura de la Biblia</h3>
+                <span class="text-xl ml-2">(4 min): 1Sa 3:1-18</span>
+                <i class="fas fa-chevron-right mx-5"></i>
+              </div>
+
+              <div class="rounded-lg px-5 w-5/12">
+                <span class="font-bold text-xl">Santiago Rincón</span>
+              </div>
+            </div>
+            <!-- fin item discurso -->
+            <!-- Fin Tesoros de la Biblia -->
+
+            <!--  inicio busquemos perlas escondidas-->
+
+            <div class="mt-10">
+              <div class="border-b border-yellow-700 pb-5">
+                <div class="flex flex-row items-center">
+                  <img src="/img/teachers.png" />
+                  <h3 class="uppercase ml-2 text-4xl font-bold text-yellow-600">
+                    Seamos mejores maestros
+                  </h3>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Inicio item discurso -->
+          <div class="mt-2">
+            <div class="flex flex-row items-center justify-between mb-2">
+              <div class="flex flex-row items-center">
+                <!-- <h3 class="font-bold">Revisita</h3> -->
+                <h3 class="text-xl">Primera conversación</h3>
+                <span class="ml-2">(3 min)</span>
+                <i class="fas fa-chevron-right mx-5"></i>
+              </div>
+
+              <div class="rounded-lg px-5 w-5/12">
+                <span class="font-bold text-xl"
+                  >Luz Neith Rincón y Delvis Aragón</span
+                >
+              </div>
+            </div>
+            <!-- fin item discurso -->
+            <!-- <div class="flex flex-row items-center justify-between mb-2">
+              <div class="flex flex-row items-center">
+                <h3 class="font-bold">
+                  “Sea más feliz en el ministerio: Ayude a los estudiantes a
+                  asistir a las reuniones”
+                </h3>
+                <span class="ml-2">(10min)</span>
+                <i class="fas fa-chevron-right mx-5"></i>
+              </div>
+
+              <div class="bg-orange-300 rounded-lg px-5">
+                <span class="text-orange-800 font-semibold"
+                  >Daniela de Campos y Nidia de Solano</span
+                >
+              </div>
+            </div> -->
+
+            <div class="flex flex-row items-center justify-between mb-2">
+              <div class="flex flex-row items-center">
+                <h3 class="text-xl">Revisita</h3>
+                <!-- <h3 class="font-bold">Primera conversación</h3> -->
+                <span class="ml-2">(4 min)</span>
+                <i class="fas fa-chevron-right mx-5"></i>
+              </div>
+
+              <div class="rounded-lg px-5 w-5/12">
+                <span class="font-bold text-xl text-left"
+                  >Martha Pabón y Rubi Mora</span
+                >
+              </div>
+            </div>
+            <!-- fin item discurso -->
+            <div class="flex flex-row items-center justify-between mb-2">
+              <div class="flex flex-row items-center">
+                <h3 class="text-xl">Curso bíblico</h3>
+                <!-- <h3 class="font-bold">Discurso</h3> -->
+                <span class="ml-2">(5 min)</span>
+                <i class="fas fa-chevron-right mx-5"></i>
+              </div>
+
+              <div class="rounded-lg px-5 w-5/12">
+                <span class="text-xl font-bold"
+                  >Nelly Hernández y Aura Celis</span
+                >
+              </div>
+            </div>
+            <!-- fin item discurso -->
+
+            <!--  Fin busquemos perlas escondidas-->
+
+            <!-- inicio Seamos mejores maestros -->
+
+            <div class="border-b border-red-800 pb-5 pt-5 mb-4">
+              <div class="flex flex-row items-center">
+                <img src="/img/sheep.png" />
+                <h3 class="uppercase ml-2 text-4xl font-bold text-red-800">
+                  Nuestra vida cristiana
+                </h3>
+              </div>
+            </div>
+
+            <div class="flex flex-row items-center justify-between mt-2 mb-2">
+              <div class="flex flex-row items-center">
+                <!-- <h3 class="font-bold">
+                  “¿Qué aprendemos de la vida de Samuel?”
+                </h3> -->
+                <h3 class="text-xl">“¿Qué aprendemos de la vida de Samuel?”</h3>
+                <!-- <h3 class="font-bold">Necesidades de la congregación</h3> -->
+                <!-- <span class="ml-2">(10 min)</span> -->
+                <span class="ml-2">(15 min)</span>
+                <i class="fas fa-chevron-right mx-5"></i>
+              </div>
+
+              <div class="rounded-lg px-5 w-5/12">
+                <!-- <span class="text-orange-800 font-semibold">David Sánchez</span> -->
+                <!-- <h3 class="font-bold text-orange-800 ml-2">Luis Miranda</h3> -->
+                <h3 class="font-bold text-xl">Carlos Solano</h3>
+                <!-- <span class="text-orange-800 font-semibold">Andrés Delgado</span> -->
+                <!-- <h3 class="font-bold text-orange-800 ml-2">Jorge Salinas</h3> -->
+                <!-- <h3 class="font-bold text-orange-800 ml-2">David Sánchez</h3> -->
+                <!-- <h3 class="font-bold text-orange-800 ml-2">Orlando Sánchez</h3> -->
+                <!-- <h3 class="font-bold text-orange-800 ml-2">
+                  Robinson Espinosa
+                </h3> -->
+              </div>
+            </div>
+            <!-- fin item discurso -->
+            <!-- <div class="flex flex-row items-center justify-between mt-2 mb-2">
+              <div class="flex flex-row items-center">
+                <h3 class="font-bold">Necesidades de la congregación</h3>
+                <h3 class="font-bold">
+                  ¿Le gustaría ser precursor auxiliar en marzo o abril?
+                </h3>
+                <span class="ml-2">(5 min)</span>
+                <i class="fas fa-chevron-right mx-5"></i>
+              </div>
+
+              <div class="bg-orange-300 rounded-lg px-5">
+                <span class="text-orange-800 font-bold">Andrés Delgado</span>
+                <span class="text-orange-800 font-bold">Jorge Salinas</span>
+              </div>
+            </div> -->
+            <!-- fin item discurso -->
+            <div class="flex flex-row items-center justify-between mt-2 mb-2">
+              <div class="flex flex-row items-center">
+                <h3 class="text-xl">Estudio bíblico de la congregación</h3>
+                <span class="ml-2">(30 min)</span>
+                <i class="fas fa-chevron-right mx-5"></i>
+              </div>
+
+              <div class="rounded-lg px-5 flex flex-col w-5/12">
+                <!-- <span class="text-orange-800 font-bold text-right"
+                  >David Sánchez</span
+                > -->
+                <!-- <span class="text-orange-800 font-bold text-right"
+                  >Orlando Sánchez</span
+                > -->
+                <!-- <span class="text-orange-800 font-bold text-right"
+                  >Andrés Delgado</span
+                > -->
+                <span class="font-bold text-xl text-left">Jorge Salinas</span>
+                <!-- <span class="text-orange-800 font-bold text-right"
+                  >Luis Miranda</span
+                > -->
+                <!-- <span class="text-orange-800 font-bold text-right"
+                  >Orlando Sánchez</span
+                > -->
+                <!-- <span class="text-orange-800 font-bold text-right">
+                Robinson Espinosa</span
+              > -->
+
+                <!-- <span class="text-orange-800 font-bold"
+                  >Lector: Leonardo Garzón
+                </span> -->
+                <span class="text-xl font-bold"
+                  >Lector: Francisco Granados
+                </span>
+                <!-- <span class="text-orange-800 font-bold"
+                  >Lector: Samuel Delgado
+                </span> -->
+                <!-- <span class="text-orange-800 font-bold"
+                >Lector: Daniel Delgadillo
+              </span> -->
+                <!-- <span class="text-orange-800 font-bold"
+                  >Lector: Juan David Sánchez
+                </span> -->
+              </div>
+            </div>
+
+            <!-- <div class="flex justify-center my-10">
+              <div class="bg-red-200 px-10">
+                <span class="text-red-700 font-bold text-2xl">
+                  1er Discurso de la visita
+                </span>
+              </div>
+            </div> -->
+            <!-- fin item discurso -->
+            <!-- fin Seamos mejores maestros -->
+            <div class="flex flex-row items-center justify-between mt-2 mb-2">
+              <span class="text-xl">Oración</span>
+              <div class="rounded-lg px-5 w-5/12">
+                <!-- <span class="text-orange-800 font-bold">Euclides Niño</span> -->
+                <!-- <span class="text-orange-800 font-bold"
+                  >Juan Carlos Poveda</span
+                > -->
+                <!-- <span class="text-orange-800 font-bold">Jorge Quintero</span> -->
+                <!-- <span class="text-orange-800 font-bold">Víctor Piñango</span> -->
+                <span class="text-xl font-bold">Jahaziel Campos</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Inicio Reuniones fin de semana -->
+      </div>
+
+      <div class="bg-green-600 px-14 py-5 mt-20 flex flex-row text-white">
+        <h1 class="text-white font-bold text-xl uppercase tracking-widest">
+          Reunión fin de semana
+        </h1>
+      </div>
+
+      <div
+        class="bg-green-100 px-12 py-2 text-white flex flex-row justify-between items-center mb-2"
+      >
+        <div class="flex flex-row">
+          <!-- <h3 class="font-bold text-black ml-2">Presidente: Luis Miranda</h3> -->
+          <!-- <h3 class="font-bold text-black ml-2">Presidente: Carlos Solano</h3> -->
+          <!-- <h3 class="font-bold text-black ml-2">
+            Presidente: Juan Carlos Poveda
+          </h3> -->
+          <h3 class="font-bold text-black ml-2">Presidente: Jonathan Cañas</h3>
+          <!-- <h3 class="font-bold text-black ml-2">Presidente: Andrés Delgado</h3> -->
+          <!-- <h3 class="font-bold text-black ml-2">Presidente: Jorge Salinas</h3> -->
+          <!-- <h3 class="font-bold text-black ml-2">Presidente: David Sánchez</h3> -->
+          <!-- <h3 class="font-bold text-black ml-2">Presidente: Orlando Sánchez</h3> -->
+          <!-- <h3 class="font-bold text-black ml-2">
+          Presidente: Robinson Espinosa
+        </h3> -->
+        </div>
+
+        <!-- <div class="bg-red-200 px-5">
+        <span class="uppercase font-bold text-red-700"
+          >semana de la visita</span
+        >
+      </div> -->
+      </div>
+
+      <span class="ml-14 font-bold">Canción </span>
+
+      <div class="mt-8 px-14">
+        <!-- <div class="mb-10 bg-gray-200 px-5 py-2 flex flex-row justify-between">
+          <div class="flex flex-row">
+            <div class="bg-blue-500 p-1 rounded-lg flex items-center">
+              <i class="fas fa-video text-sm text-white"></i>
+            </div>
+            <h3 class="font-bold text-black ml-2">
+            Encargado Zoom: Jahaziel Campos
+          </h3>
+            <h3 class="font-bold text-black ml-2">
+              Encargado Zoom: Carlos Solano
+            </h3>
+            <h3 class="font-bold text-black ml-2">
+            Encargado Zoom: Jhon Palomino
+          </h3>
+          </div>
+          <div class="flex flex-row">
+            <div class="bg-purple-700 p-1 rounded-lg flex items-center">
+              <i class="fas fa-user-tie text-white"></i>
+            </div>
+            <h3 class="font-bold text-black ml-2">
+              Acomodadores: Juan David Sánchez y James Hortua
+            </h3>
+          </div>
+        </div> -->
+        <div class="border-b border-purple-800 pb-5 mb-4">
+          <div class="flex flex-row items-center">
+            <i class="fab fa-black-tie text-7xl text-purple-800"></i>
+            <h3 class="uppercase ml-2 text-4xl font-bold text-purple-800">
+              Discurso Público
+            </h3>
+          </div>
+        </div>
+
+        <div class="flex flex-row items-center justify-between mt-2 mb-2">
+          <div class="flex flex-row items-center">
+            <!-- <h3 class="font-bold">
+              “¿Qué aprendemos de la vida de Samuel?”
+            </h3> -->
+            <h3 class="text-xl">Por qué deben ser diferentes los cristianos</h3>
+            <span class="ml-2">(30 min)</span>
+            <i class="fas fa-chevron-right mx-5"></i>
+          </div>
+
+          <div class="px-5 w-5/12">
+            <!-- <span class="text-pink-800 font-semibold">David Sánchez</span> -->
+            <!-- <h3 class="font-bold text-pink-800 ml-2">Luis Miranda</h3> -->
+            <!-- <h3 class="font-bold text-pink-800 ml-2">Carlos Solano</h3> -->
+            <!-- <span class="text-pink-800 font-semibold">Andrés Delgado</span> -->
+            <!-- <h3 class="font-bold text-pink-800 ml-2">Jorge Salinas</h3> -->
+            <!-- <h3 class="font-bold text-pink-800 ml-2">David Sánchez</h3> -->
+            <h3 class="text-xl font-bold">
+              Armando López - Cong. Paraíso (Cundinamarca)
+            </h3>
+            <!-- <h3 class="font-bold text-pink-800 ml-2">
+              Robinson Espinosa
+            </h3> -->
+          </div>
+        </div>
+
+        <div class="border-b border-blue-800 pb-5 mb-4 mt-10">
+          <div class="flex flex-row items-center">
+            <div class="bg-blue-800 p-3">
+              <i class="fas fa-book-open text-4xl text-white"></i>
+            </div>
+            <h3 class="uppercase ml-2 text-4xl font-bold text-blue-800">
+              Estudio de La Atalaya
+            </h3>
+          </div>
+        </div>
+
+        <div class="flex flex-row items-center justify-between mt-2 mb-2">
+          <div class="flex flex-row items-center">
+            <!-- <h3 class="font-bold">
+              “¿Qué aprendemos de la vida de Samuel?”
+            </h3> -->
+            <h3 class="text-xl">Escuchemos la voz del pastor excelente</h3>
+            <span class="ml-2">(1 hr)</span>
+            <i class="fas fa-chevron-right mx-5"></i>
+          </div>
+
+          <div class="w-5/12 px-5">
+            <!-- <span class="text-pink-800 font-semibold">David Sánchez</span> -->
+            <!-- <h3 class="font-bold text-pink-800 ml-2">Luis Miranda</h3> -->
+            <!-- <h3 class="font-bold text-pink-800 ml-2">Carlos Solano</h3> -->
+            <!-- <span class="text-pink-800 font-semibold">Andrés Delgado</span> -->
+            <!-- <h3 class="font-bold text-pink-800 ml-2">Jorge Salinas</h3> -->
+            <!-- <h3 class="font-bold text-pink-800 ml-2">David Sánchez</h3> -->
+            <h3 class="font-bold text-xl text-left">Orlando Sánchez</h3>
+            <!-- <h3 class="font-bold text-pink-800 ml-2">
+              Robinson Espinosa
+            </h3> -->
+            <!-- <span class="text-pink-800 font-bold text-right"
+              >Lector: Daniel Delgadillo
+            </span> -->
+            <span class="text-xl font-bold text-left"
+              >Lector: Jhon Palomino
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
